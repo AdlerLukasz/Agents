@@ -23,7 +23,9 @@ public class AgentDelete extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Long id = Long.parseLong(request.getParameter("agentCode"));
-        agent.remove(id);
-        response.sendRedirect(request.getContextPath());
+        //agent.remove(id);
+      //  response.sendRedirect(request.getContextPath());
+        System.out.println("Usunięto i pzekierowanie");
+       response.sendRedirect("delete.jsp");
     }
 }
