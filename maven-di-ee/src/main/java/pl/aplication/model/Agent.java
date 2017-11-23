@@ -14,6 +14,12 @@ import java.math.BigDecimal;
 @NamedQuery(name="Agent.findAll", query="SELECT a FROM Agent a")
 public class Agent implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
+	
+	
+	
+	
+	
 
 	@Id
 	@Column(name="AGENT_CODE")
@@ -34,6 +40,29 @@ public class Agent implements Serializable {
 
 	public Agent() {
 	}
+	
+	
+	
+	
+	
+	
+
+	public Agent(int agentCode, String agentName, BigDecimal commission, String country, String phoneNo,
+			String workingArea) {
+		super();
+		this.agentCode = agentCode;
+		this.agentName = agentName;
+		this.commission = commission;
+		this.country = country;
+		this.phoneNo = phoneNo;
+		this.workingArea = workingArea;
+	}
+
+
+
+
+
+
 
 	public int getAgentCode() {
 		return this.agentCode;
@@ -83,4 +112,7 @@ public class Agent implements Serializable {
 		this.workingArea = workingArea;
 	}
 
+	
+	
+	
 }
