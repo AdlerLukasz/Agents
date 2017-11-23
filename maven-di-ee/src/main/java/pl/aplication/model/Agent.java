@@ -17,7 +17,7 @@ public class Agent implements Serializable {
 
 	@Id
 	@Column(name="AGENT_CODE")
-	private String agentCode;
+	private int agentCode;
 
 	@Column(name="AGENT_NAME")
 	private String agentName;
@@ -35,11 +35,11 @@ public class Agent implements Serializable {
 	public Agent() {
 	}
 
-	public String getAgentCode() {
+	public int getAgentCode() {
 		return this.agentCode;
 	}
 
-	public void setAgentCode(String agentCode) {
+	public void setAgentCode(int agentCode) {
 		this.agentCode = agentCode;
 	}
 
