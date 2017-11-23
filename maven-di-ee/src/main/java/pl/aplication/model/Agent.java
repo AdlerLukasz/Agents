@@ -23,7 +23,7 @@ public class Agent implements Serializable {
 
 	@Id
 	@Column(name="AGENT_CODE")
-	private int agentCode;
+	private Long agentCode;
 
 	@Column(name="AGENT_NAME")
 	private String agentName;
@@ -47,7 +47,7 @@ public class Agent implements Serializable {
 	
 	
 
-	public Agent(int agentCode, String agentName, BigDecimal commission, String country, String phoneNo,
+	public Agent(Long agentCode, String agentName, BigDecimal commission, String country, String phoneNo,
 			String workingArea) {
 		super();
 		this.agentCode = agentCode;
@@ -64,11 +64,11 @@ public class Agent implements Serializable {
 
 
 
-	public int getAgentCode() {
+	public Long getAgentCode() {
 		return this.agentCode;
 	}
 
-	public void setAgentCode(int agentCode) {
+	public void setAgentCode(Long agentCode) {
 		this.agentCode = agentCode;
 	}
 
