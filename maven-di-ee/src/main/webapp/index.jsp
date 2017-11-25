@@ -28,9 +28,9 @@
          <c:forEach var = "row" items = "${result.rows}">
             <tr>
                <td> <c:out value = "${row.agentCode}"/></td>
-               <td> <c:out value = "${row.first}"/></td>
-               <td> <c:out value = "${row.last}"/></td>
-               <td> <c:out value = "${row.age}"/></td>
+               <td> <c:out value = "${row.agentCode}"/></td>
+               <td> <c:out value = "${row.agentCode}}"/></td>
+               <td> <c:out value = "${row.agentCode}"/></td>
             </tr>
          </c:forEach>
       </table>
