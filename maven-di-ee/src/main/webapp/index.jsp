@@ -5,7 +5,7 @@
 
 <html>
 <body>
-<h2>Book Manager</h2>
+<h2>Agent Manager</h2>
 
     <br/>
 <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
