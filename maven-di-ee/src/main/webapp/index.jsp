@@ -1,15 +1,17 @@
-<%@ page import = "java.io.*,java.util.*,java.sql.*"%>
-<%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c"%>
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
-
+<%--
+//<%@ page import = "java.io.*,java.util.*,java.sql.*"%>
+//<%@ page import = "javax.servlet.http.*,javax.servlet.*" %>
+//<%@ page import = "org.apache.taglibs.standard.tag.rt.sql.SetDataSourceTag" %>
+//<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c"%>
+//<%@ taglib uri = "http://java.sun.com/jsp/jstl/sql" prefix = "sql"%>
+--%>
 <html>
 <body>
 <h2>Agent Manager</h2>
-
+<%--
     <br/>
 <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
-         url = "jdbc:mysql://localhost/Manager"
+         url = "java:/datasources/manager"
          user = "root"  password = "1234"/>
 
          <sql:query dataSource = "${snapshot}" var = "result">
@@ -34,7 +36,7 @@
             </tr>
          </c:forEach>
       </table>
-
+--%>
     <h3>Save</h3>
     <form action="saveAgent" method="POST">
         <input type="text" name="agentName" placeholder="ISBN" /><br />
