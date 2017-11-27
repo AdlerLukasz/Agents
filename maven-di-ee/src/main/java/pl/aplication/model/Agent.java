@@ -2,6 +2,8 @@ package pl.aplication.model;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
+
 import java.math.BigDecimal;
 
 
@@ -9,6 +11,7 @@ import java.math.BigDecimal;
  * The persistent class for the Agents database table.
  * 
  */
+@XmlRootElement
 @Entity
 @Table(name="Agents")
 @NamedQuery(name="Agent.findAll", query="SELECT a FROM Agent a")

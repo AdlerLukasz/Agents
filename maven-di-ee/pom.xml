@@ -9,7 +9,10 @@ http://maven.apache.org/maven-v4_0_0.xsd">
     <version>0.0.1-SNAPSHOT</version>
     <name>maven-di-ee Maven Webapp</name>
      
-     
+     <properties>
+    <org.springframework-version>4.2.5.RELEASE</org.springframework-version> <!-- wanted Spring version -->
+    <hibernate.version>5.1.0.Final</hibernate.version> <!-- wanted Hibernate version -->
+</properties>
      <dependencyManagement>
         <dependencies>
             <dependency>
@@ -49,6 +52,31 @@ http://maven.apache.org/maven-v4_0_0.xsd">
             <artifactId>cdi-api</artifactId>
             <scope>provided</scope>
         </dependency>
+        
+        
+         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+            <version>1.5.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>1.5.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version></version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+            <version></version>
+        </dependency>
+        
+        
     </dependencies>
      
      
@@ -64,6 +92,28 @@ http://maven.apache.org/maven-v4_0_0.xsd">
                 <target>1.8</target>
             </configuration>
         </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        
+        
+        
         </plugins>
     </build>
+    
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
+    
+    
 </project>
