@@ -8,9 +8,18 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
         <non-jta-data-source>java:/datasources/manager</non-jta-data-source>
         <class>pl.aplication.model.Agent</class>
         <class>pl.aplication.model.Customer</class>
-        <class>pl.aplication.model.Order</class>
+        <class>pl.aplication.model.OrdersEntity</class>
+
         <properties>
             <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/Manager"/>
+            <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/Manager"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306/Manager"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/Manager"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
         </properties>
     </persistence-unit>
 </persistence>

@@ -2,7 +2,7 @@ package pl.aplication.dao;
 
 import pl.aplication.model.Agent;
 
-public interface AgentDao {
+public interface AgentDao  {
 
 	public void saveAgent (Agent agent);
 	public void updateAgent (Agent agent);

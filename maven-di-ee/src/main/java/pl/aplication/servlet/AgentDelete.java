@@ -19,6 +19,7 @@ public class AgentDelete extends HttpServlet {
      
     @Inject
     private AgentDao agent;
+    
  
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
