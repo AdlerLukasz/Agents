@@ -41,8 +41,7 @@ public class Agent implements Serializable {
 	@Column(name="WORKING_AREA")
 	private String workingArea;
 
-	public Agent() {
-	}
+
 	
 	
 	

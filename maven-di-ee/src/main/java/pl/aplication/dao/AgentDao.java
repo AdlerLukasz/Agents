@@ -9,6 +9,7 @@ public interface AgentDao  {
 	
 	public Agent getId (Long id);
 	public void remove(Long id);
+	public void addAgent(Agent agent);
 	
 	
 }

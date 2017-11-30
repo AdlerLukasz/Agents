@@ -48,13 +48,19 @@
         <input type="number" name="id" placeholder="BookID" /><br />
         <input type="submit" value="Get" />
     </form>
-    <h3>Update</h3>
-    <form action="update" method="POST">
-        <input type="number" name="id" placeholder="ID" /><br />
-        <input type="text" name="isbn" placeholder="ISBN" /><br />
-        <input type="text" name="name" placeholder="Name" /><br />
-        <input type="text" name="author" placeholder="Author" /><br />
+    <h3>Add Agente</h3>
+    <form action="/AddAgent" method="POST">
+        <input type="number" name="agentCode" placeholder="AgentCode" /><br />
+        <input type="text" name="agentName" placeholder="agentName" /><br />
+        <input type="number" name="commission" placeholder="commision" /><br />
+        <input type="text" name="phoneNo" placeholder="phone" /><br />
+
+        <input type="text" name="workingAre" placeholder="working Area" /><br />
         <input type="submit" value="Update" />
+
+
+
+
     </form>
     <h3>Delete</h3>
     <form action="delete" method="POST">

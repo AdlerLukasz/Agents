@@ -56,4 +56,18 @@ public class AgentDaoImplementation implements AgentDao{
 		
 	}
 
+	@Override
+	public void addAgent(Agent agent) {
+		EntityManager em = emFactory.createEntityManager();
+		EntityTransaction tx = em.getTransaction();
+		tx.begin();
+		//obiekt posiada domyślnie pole id = 0
+		System.out.print(agent.getAgentCode()+ " ");
+		em.persist(agent);
+		//do id został przypisany wygenerowany przez bazę danych klucz
+		System.out.println(agent.getAgentCode());
+		tx.commit();
+		em.close();
+	}
+
 }

@@ -16,7 +16,7 @@ import javax.ws.rs.*;
 @Path("/endpoint")
 public class EndPioint {
 	
-	Agent agent = new Agent();
+
 
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
